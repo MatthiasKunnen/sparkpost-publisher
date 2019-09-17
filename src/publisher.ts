@@ -8,12 +8,34 @@ export interface CreateOrUpdateTemplate extends CreateTemplate {
     content: TemplateContent;
 }
 
+export interface SparkPostPublisherConstructorOptions {
+    /**
+     * The SparkPost API key. Required permissions: Templates: Read/Write.
+     */
+    apiKey: string;
+
+    /**
+     * The version of the API.
+     * @default v1
+     */
+    apiVersion?: string;
+
+    /**
+     * The SparkPost endpoint to address.
+     * @default https://api.sparkpost.com:443
+     */
+    endpoint?: string;
+}
+
 export class SparkPostPublisher {
 
     private readonly sparkPost: SparkPost;
 
-    constructor(apiKey: string) {
-        this.sparkPost = new SparkPost(apiKey);
+    constructor(config: SparkPostPublisherConstructorOptions) {
+        this.sparkPost = new SparkPost(config.apiKey, {
+            apiVersion: config.apiVersion,
+            endpoint: config.endpoint,
+        });
     }
 
     /**

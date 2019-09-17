@@ -89,6 +89,9 @@ command. Optionally, you can specify that you only wish to publish one email
 using the `--template template-id` flag. New templates will be created and
 published.
 
+### Endpoint and API version
+Endpoint and api version can be configured using `--endpoint` and `--api-version`.
+
 ### Multiple environments, review/staging
 If you have multiple environments you can use the `suffix` flag to deploy your
 templates with a suffix.

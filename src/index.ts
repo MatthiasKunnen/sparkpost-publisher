@@ -19,6 +19,8 @@ export interface SPFPublisherConfig {
 
 export interface PublishOrDraftParams {
     apiKey: string;
+    apiVersion?: string;
+    endpoint?: string;
     publish: boolean;
     suffix?: string;
     template?: string;
@@ -81,7 +83,11 @@ export async function handlePublishOrDraft(params: PublishOrDraftParams) {
         templates = Object.keys(getConfig()).map(getTemplate);
     }
 
-    const publisher = new SparkPostPublisher(params.apiKey);
+    const publisher = new SparkPostPublisher({
+        apiKey: params.apiKey,
+        apiVersion: params.apiVersion,
+        endpoint: params.endpoint,
+    });
 
     for (const t of templates) {
         let id = t.id;

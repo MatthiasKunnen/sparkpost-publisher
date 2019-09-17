@@ -30,7 +30,9 @@ describe('Publisher', () => {
     });
 
     beforeEach(async () => {
-        publisher = new SparkPostPublisher(getApiKey());
+        publisher = new SparkPostPublisher({
+            apiKey: getApiKey(),
+        });
     });
 
     afterEach(async () => {

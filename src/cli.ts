@@ -17,6 +17,16 @@ const draftAndPublish: Array<Option> = [
         describe: 'SparkPost API key',
     },
     {
+        name: 'api-version',
+        type: 'string',
+        describe: 'Sparkpost API version, defaults to v1',
+    },
+    {
+        name: 'endpoint',
+        type: 'string',
+        describe: 'Sparkpost endpoint, defaults to https://api.sparkpost.com:443',
+    },
+    {
         name: 'suffix',
         type: 'string',
         describe: 'Specify a suffix for your template IDs',
@@ -63,6 +73,8 @@ async function parsePublishOrDraft(req: any, publish: boolean) {
 
     const options: PublishOrDraftParams = {
         apiKey: req.apiKey,
+        apiVersion: req.apiVersion,
+        endpoint: req.endpoint,
         publish,
         suffix: req.suffix,
         verbose: req.verbose,
