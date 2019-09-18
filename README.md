@@ -1,4 +1,4 @@
-[![npm version](https://img.shields.io/npm/v/sparkpost-publisher.svg?style=for-the-badge)](https://www.npmjs.com/package/sparkpost-publisher)
+[![npm version](https://img.shields.io/npm/v/sparkpost-publisher.svg?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/sparkpost-publisher)
 [![Build Status](https://img.shields.io/travis/com/MatthiasKunnen/sparkpost-publisher/master.svg?logo=travis&style=for-the-badge)
 ](https://travis-ci.com/MatthiasKunnen/sparkpost-publisher)
 
