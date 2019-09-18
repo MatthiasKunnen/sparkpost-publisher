@@ -1,6 +1,6 @@
 {
     "name": "sparkpost-publisher",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "A package that publishes your emails to SparkPost",
     "repository": {
         "type": "git",
