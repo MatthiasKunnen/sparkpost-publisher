@@ -1,5 +1,5 @@
 [![npm version](https://img.shields.io/npm/v/sparkpost-publisher.svg?style=for-the-badge)](https://www.npmjs.com/package/sparkpost-publisher)
-[![Build Status](https://img.shields.io/travis/com/MatthiasKunnen/passport-http-2/master.svg?logo=travis&style=for-the-badge)
+[![Build Status](https://img.shields.io/travis/com/MatthiasKunnen/sparkpost-publisher/master.svg?logo=travis&style=for-the-badge)
 ](https://travis-ci.com/MatthiasKunnen/sparkpost-publisher)
 
 # SparkPost publisher
