@@ -1,6 +1,8 @@
 [![npm version](https://img.shields.io/npm/v/sparkpost-publisher.svg?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/sparkpost-publisher)
 [![Build Status](https://img.shields.io/travis/com/MatthiasKunnen/sparkpost-publisher/master.svg?logo=travis&style=for-the-badge)
 ](https://travis-ci.com/MatthiasKunnen/sparkpost-publisher)
+[![Build Status](https://img.shields.io/npm/l/sparkpost-publisher?&style=for-the-badge)
+](https://github.com/MatthiasKunnen/sparkpost-publisher/blob/master/LICENSE)
 
 # SparkPost publisher
 This library allows you to publish your emails to SparkPost automatically. No
