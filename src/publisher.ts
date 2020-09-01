@@ -75,11 +75,10 @@ export class SparkPostPublisher {
             }
         }
 
-        const submitTemplate = {
+        const {id, ...submitTemplate} = {
             ...template,
             published: publish,
         };
-        delete submitTemplate.id; // ID is not allowed on update
 
         try {
             // Update drafts when publish is false or update existing published templates

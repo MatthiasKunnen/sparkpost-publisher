@@ -64,7 +64,6 @@ export function getTemplate(templateId: string): CreateOrUpdateTemplate {
     }
 
     const template: CreateOrUpdateTemplate = {
-        content: {}, // For when the config does not have the content map
         ...templateConfig.sparkpost,
         id: templateId,
     };

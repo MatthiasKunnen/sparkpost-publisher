@@ -4,5 +4,5 @@ node_js:
   - "node"
 
 script:
-  - npm run build --silent
-  - npm run test --silent
+  - yarn run build
+  - yarn run test
